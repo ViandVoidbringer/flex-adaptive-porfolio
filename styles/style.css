@@ -12,6 +12,7 @@ body {
     display: -o-flex;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .wallet {
@@ -28,36 +29,30 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
+    border: 1px solid #0098AC;
+    border-radius: 5px;
+    height: 50px;
 }
 
 .header-button-1 {
-    border: 1px solid #0098AC;
-    border-radius: 5px;
     width: 215px;
-    height: 50px;
     margin-right: 30px;
     background-color: #0098AC;
     color: #FFFFFF;
 }
 
 .header-button-2 {
-    border: 1px solid #0098AC;
-    border-radius: 5px;
     width: 145px;
-    height: 50px;
     border: 1px solid #0098AC;
     border-radius: 5px;
 }
 
 .web-version {
-    margin-top: 50px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-around;
-    height: 517px;
+    padding-top: 135px;
+    padding-bottom: 140px;
+    background: url('../img/Slice-BG.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 .wallet-version {
@@ -67,7 +62,7 @@ body {
     font-size: 40px;
     line-height: 55px;
     color: #000000;
-    width: 658px;
+    width: 60%;
 }
 
 .partners-content {
@@ -334,6 +329,7 @@ body {
 }
 
 .how-to-image {
+    /* выровнять */
     border: 1px solid #E9E9E9;
     height: 320px;
     width: 320px;
@@ -468,96 +464,15 @@ body {
 }
 
 .header {
-    margin: 0 110px 0 110px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .main {
-    margin: 0 110px 0 110px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .wallet-mobile {
     display: none;
-}
-
-@media (max-width: 1200px) {
-    .header {
-        margin: 0 50px 0 50px;
-    }
-    .main {
-        margin: 0 50px 0 50px;
-    }
-}
-
-@media (max-width: 992px) {
-    .wallet-version {
-        font-size: 30px;
-        line-height: 45px;
-        color: #000000;
-        width: 400px;
-        text-align: center;
-    }
-    .web-version {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-button-1,
-    .header-button-2,
-    .wallet {
-        display: none;
-    }
-    .header {
-        margin: 0;
-        display: flex;
-        background-color: #E6F5F7;
-        justify-content: space-around;
-        max-width: 768px;
-    }
-    .first-picture img {
-        width: 100%;
-    }
-    .ru-button {
-        margin-right: -100px;
-    }
-    .wallet-mobile {
-        display: inherit;
-        align-items: center;
-    }
-    .wallet-version {
-        font-size: 20px;
-        color: #000000;
-        width: 100%;
-        text-align: center;
-    }
-    .wallet-mobile-1 {
-        order: -1;
-    }
-    .web-version {
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 100px;
-    }
-    .partners {
-        margin-top: 20%;
-        margin-bottom: -10%;
-    }
-    .partners-5,
-    .partners-4 {
-        display: none;
-    }
-    .logos {
-        justify-content: space-between;
-    }
-    .arrow-left {
-        margin-right: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .partners-3 {
-        display: none;
-    }
 }
