@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+    .header {
+        margin: 0 auto;
+    }
+    .main {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .wallet-version {
+        font-size: 30px;
+        line-height: 45px;
+        color: #000000;
+        width: 400px;
+        text-align: center;
+    }
+    .web-version {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-button-1,
+    .header-button-2,
+    .wallet {
+        display: none;
+    }
+    .main {
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        margin: 0;
+        display: flex;
+        background-color: #E6F5F7;
+        margin-bottom: 30px;
+        ;
+    }
+    .first-picture img {
+        width: 100%;
+    }
+    .ru-button {
+        margin-right: -100px;
+    }
+    .wallet-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .wallet-mobile-1 {
+        order: -1;
+    }
+    .web-version {
+        background: url('../img/Groupmob.jpg') no-repeat 70% 70%;
+        background-size: cover;
+        padding-bottom: 400px;
+        padding-top: 20px;
+    }
+    .wallet-version {
+        font-size: 40px;
+        line-height: 55px;
+        color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+    .partners {
+        margin-top: 20%;
+        margin-bottom: -10%;
+    }
+    .partners-content {}
+    .partners-5,
+    .partners-4,
+    .partners-3 {
+        display: none;
+    }
+    .logos {
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .arrow-left {
+        padding-left: 20px;
+    }
+    .arrow-right {
+        padding-right: 20px;
+    }
+    .advantages {
+        padding: 0;
+        margin: 0 0 800px 0;
+        border: none;
+    }
+    .advantages-images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .advantages-image {
+        margin-bottom: 35px;
+    }
+    .how-to-images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        display: none;
+    }
+    .stats {
+        padding: 0;
+        margin: 0 0 1100px 0;
+        border: none;
+    }
+    .stats-images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stats-image {
+        margin-bottom: 35px;
+    }
+    .service {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer {
+        display: none;
+    }
+}
