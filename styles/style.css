@@ -212,6 +212,15 @@ body {
     margin-top: 91px;
     font-family: Ubuntu;
     font-style: normal;
+    background: url('../img/Groupmob331.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+}
+
+.service-mob {
+    display: none;
 }
 
 .service h2 {
@@ -331,9 +340,9 @@ body {
 .how-to-image {
     /* выровнять */
     border: 1px solid #E9E9E9;
-    height: 320px;
     width: 320px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .how-to-image h3 {
