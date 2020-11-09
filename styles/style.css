@@ -485,3 +485,7 @@ body {
 .wallet-mobile {
     display: none;
 }
+
+.wallet-mobile:first-child {
+    display: block;
+}
