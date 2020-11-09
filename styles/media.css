@@ -113,13 +113,11 @@
     .first-picture img {
         width: 100%;
     }
-    .ru-button {
-        margin-right: -150px;
-    }
     .wallet-mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 8%;
     }
     .wallet-mobile-1 {
         order: -1;
@@ -184,7 +182,7 @@
     .how-to-image {
         margin-bottom: 35px;
         padding-bottom: 10px;
-        width: 100%;
+        width: 80%;
     }
     .about {
         margin: 0 30px 0 30px;
@@ -203,7 +201,7 @@
     }
     .stats {
         padding: 0;
-        margin: 0 0 1100px 0;
+        margin: 0 0 1100px 20px;
         border: none;
     }
     .stats-image {
@@ -218,6 +216,7 @@
         background: url('../img/Groupmob331.jpg') no-repeat;
         background-size: cover;
         padding-top: 30px;
+        margin-right: 45px;
     }
     .service-right,
     .service-left {
@@ -229,7 +228,6 @@
     }
     .service-right .service-mob {
         text-align: left;
-        margin-left: 27px;
     }
     .service-right-img,
     .service-left-img {
@@ -266,7 +264,7 @@
 @media (max-width: 480px) {
     .web-version {
         background: url('../img/Groupmob.jpg') no-repeat 40% 40%;
-        background-size: cover;
+        background-size: contain;
     }
     .partners-2 {
         display: none;
@@ -275,7 +273,28 @@
     .service-left {
         width: 90%;
     }
+    .advantages-h,
+    .how-to-h {
+        font-size: 15px;
+        line-height: 200%;
+        text-align: center;
+    }
+    .how-to-images {
+        margin-left: 15px;
+    }
+    .how-to-image img {
+        width: 160px;
+    }
+    .advantages-image {
+        border: 1px solid #E9E9E9;
+        width: 290px;
+        margin: 0 0 35px 1px;
+    }
     .inputs input {
         width: 80%;
+    }
+    .wallet-version p {
+        font-size: 20px;
+        line-height: 25px;
     }
 }
