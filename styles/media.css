@@ -72,9 +72,17 @@
     .web-version {
         max-width: 992px;
     }
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .how-to-images {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .about-text h2,
+    h3 {
+        text-align: center;
     }
     .how-to-image {
         margin: 0 15px 50px 0;
