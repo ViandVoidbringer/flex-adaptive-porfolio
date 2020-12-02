@@ -18,7 +18,7 @@
             <img src="img/Group 1.png" alt="group 1">
         </div>
         <div class="wallet">
-            <p>Открыть кошелек</p>
+            <p><a href="#">Открыть кошелек</a></p>
         </div>
         <div class="wallet">
             <p>Где используется DLX?</p>
@@ -27,7 +27,7 @@
             <img src="img/mobile-menu.png" height="15px">
         </div>
         <div class="wallet-mobile ru-button">
-            <p>RU</p>
+            <p><a href="#">RU</a></p>
             <img src="img/header-language-poly.png" height="8px">
         </div>
         <div class="reg-buttons">
@@ -50,14 +50,14 @@
                 <div class="partners">
                     <h1>Наши партнёры</h1>
                 </div>
-                <div class="logos">
-                    <div class="arrow-left"><img src="img/arrow-left.svg" alt="arrow-left"></div>
-                    <div class="partners-1"><img src="img/partners-1.png" alt="partners-1" height="56px"></div>
-                    <div class="partners-2"><img src="img/partners-2.png" alt="partners-2" height="100px"></div>
-                    <div class="partners-3"><img src="img/partners-3.png" alt="partners-3" height="56px"></div>
-                    <div class="partners-4"><img src="img/partners-4.png" alt="partners-4" height="100px"></div>
-                    <div class="partners-5"><img src="img/partners-5.png" alt="partners-5" height="56px"></div>
-                    <div class="arrow-right"><img src="img/arrow-right.svg" alt="arrow-right"></div>
+                <div class="logos" id="slides">
+                    <div class="arrow-left" id="show-prev"><img src="img/arrow-left.svg" alt="arrow-left"></div>
+                    <div class="partners-1"><img src="" alt="partners-1" id="img1"></div>
+                    <div class="partners-2"><img src="" alt="partners-2" id="img2"></div>
+                    <div class="partners-3"><img src="" alt="partners-3" id="img3"></div>
+                    <div class="partners-4"><img src="" alt="partners-4" id="img4"></div>
+                    <div class="partners-5"><img src="" alt="partners-5" id="img5"></div>
+                    <div class="arrow-right" id="show-next"><img src="img/arrow-right.svg" alt="arrow-right"></div>
                 </div>
             </div>
             <div class="about">
@@ -238,6 +238,64 @@
             </div>
         </div>
     </footer>
+    <script>
+        let showPrevBtn = document.getElementById("show-prev");
+        let showNextBtn = document.getElementById("show-next");
+
+        let slideImage1 = document.getElementById("img1");
+        let slideImage2 = document.getElementById("img2");
+        let slideImage3 = document.getElementById("img3");
+        let slideImage4 = document.getElementById("img4");
+        let slideImage5 = document.getElementById("img5");
+
+        showPrevBtn.addEventListener('click', onShowPrevBtnClick);
+        showNextBtn.addEventListener('click', onShowNextBtnClick);
+
+        let imagesWays = [];
+        imagesWays.push("img/partners-1.png");
+        imagesWays.push("img/partners-2.png");
+        imagesWays.push("img/partners-3.png");
+        imagesWays.push("img/partners-4.png");
+        imagesWays.push("img/partners-5.png");
+
+        let currentImages = [0, 1, 2, 3, 4];
+
+        slideImage1.src = imagesWays[currentImages[0]];
+        slideImage2.src = imagesWays[currentImages[1]];
+        slideImage3.src = imagesWays[currentImages[2]];
+        slideImage4.src = imagesWays[currentImages[3]];
+        slideImage5.src = imagesWays[currentImages[4]];
+
+        function onShowPrevBtnClick() {
+            for (let i = 0; i < currentImages.length; i++) {
+                currentImages[i]--;
+                if (currentImages[i] < 0) {
+                    currentImages[i] = (currentImages.length - 1);
+                };
+            }
+            slideImage1.src = imagesWays[currentImages[0]];
+            slideImage2.src = imagesWays[currentImages[1]];
+            slideImage3.src = imagesWays[currentImages[2]];
+            slideImage4.src = imagesWays[currentImages[3]];
+            slideImage5.src = imagesWays[currentImages[4]];
+
+        }
+
+        function onShowNextBtnClick() {
+            for (let i = 0; i < currentImages.length; i++) {
+                currentImages[i]++;
+                if (currentImages[i] === imagesWays.length) {
+                    currentImages[i] = 0;
+                };
+            }
+            slideImage1.src = imagesWays[currentImages[0]];
+            slideImage2.src = imagesWays[currentImages[1]];
+            slideImage3.src = imagesWays[currentImages[2]];
+            slideImage4.src = imagesWays[currentImages[3]];
+            slideImage5.src = imagesWays[currentImages[4]];
+
+        }
+    </script>
 </body>
 
 </html>
